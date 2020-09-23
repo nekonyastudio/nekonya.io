@@ -1,18 +1,67 @@
 <!DOCTYPE html>
+<html lang="zh-cmn-hans">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nekonya.io - Nekonya Studio</title>
+    <title>にゃ‼猫ちゃん大好き - Nekonya Studio</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" /> 
+    <link rel="stylesheet" href="vendor/layui//css/layui.css" />
 </head>
 <body>
-    <div>
-        <img src="https://github.com/nekonyastudio/nekonya.io/blob/master/logo.png?raw=true" /> 
+    <ul class="layui-nav layui-bg-blue" lay-filter="">
+        <li class="layui-nav-item">Nekonya Studio</li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">Works</a>
+          <dl class="layui-nav-child">
+            <dd><a href="https://tinax.corala.space" target="_blank">TinaX</a></dd>
+          </dl>
+        </li>
+
+        <li class="layui-nav-item">
+            <a href="javascript:;">Author</a>
+            <dl class="layui-nav-child">
+              <dd><a href="https://yomunchan.moe" target="_blank">Blog</a></dd>
+            </dl>
+          </li>
+    </ul> 
+
+    <div class="main-content">
+        <div class="page-title">
+            <h1>Nekonya Studio</h1>
+            <span class="layui-badge layui-bg-blue" style="margin-left: 2em;">ねこ にゃ!  ฅ(`･ω･´)ฅ</span>
+        </div>
+        <br><br>
+        <div class="content-about">
+            <fieldset class="layui-elem-field layui-field-title">
+                <legend>About</legend>
+            </fieldset>
+            <p style="word-break:break-all;">
+                这是一个兴趣使然的个人工作室的主页。
+                <br>
+                嘛，虽说姑且是个主页，但也没什么东西可放的，就这样好了。
+                <br>
+                <br>
+                喵
+            </p>
+        </div>
+        <!-- <br><br> -->
+        <!-- <hr class="layui-bg-black"> -->
+        <br>
+        <div>
+            <img async src="https://github.com/nekonyastudio/nekonya.io/blob/master/logo.png?raw=true" style="max-width:90%; height: auto;" /> 
+        </div>
     </div>
-    <div>
-        <h3>Nekonya Studio</h3><br><h5>一个兴趣使然的个人工作室。</h5>
-        <br><br><hr>
-        <p>下面就没有了，并不想做官网。</p>
-    </div>
+    <footer>
+        Copy Right 2020 © Nekonya Studio
+    </footer>
+    <script src="vendor/layui/layui.js" ></script>
+    <script>
+        layui.use(['layer', 'form', 'element'], function(){
+            var layer = layui.layer, form = layui.form;
+            var element = layui.element;
+
+            layer.msg('喵呜,咕噜咕噜咕噜');
+        });
+    </script>
 </body>
 </html>

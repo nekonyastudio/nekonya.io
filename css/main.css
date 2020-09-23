@@ -1,0 +1,45 @@
+body{
+    background-color: #2F4056;
+    display: grid;
+}
+
+.main-content{
+    background-color: #ffffff;
+    margin-top: 1.5em;
+    margin-right: 3em;
+    margin-left: 3em;
+    min-height: 800px;
+    border-radius:6px;
+
+    padding-top: 2em;
+    padding-left: 2em;
+}
+
+.page-title{
+    display: flex;
+}
+
+.content-collapse{
+    align-items: flex-start;
+    max-width: 95%;
+}
+
+.content-about{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.content-services{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    padding-bottom: 2em;
+    max-width: 98%;
+}
+
+footer{
+    color: rgb(172, 188, 201);
+    margin-top: 8px;
+    align-content: center;
+    text-align: center;
+}
